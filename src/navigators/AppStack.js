@@ -1,6 +1,6 @@
 import {createStackNavigator} from '@react-navigation/stack';
 import React from 'react';
-import {NotificationScreen} from '../screens';
+import {NotificationScreen, Roomdetail} from '../screens';
 import MainBottomTab from './MainBottomTab';
 
 const Stack = createStackNavigator();
@@ -14,6 +14,7 @@ const AppStack = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen name="NotificationScreen" component={NotificationScreen} />
+      <Stack.Screen name="Roomdetail" component={Roomdetail} />
     </Stack.Navigator>
   );
 };
